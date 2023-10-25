@@ -1,0 +1,120 @@
+<link href="./home.component.css" rel="stylesheet">
+
+<header class="bg-[#064e3b] sticky top-0 text-white flex items-center justify-between px-4 py-2">
+  <div class="flex items-center">
+    <img src="../../../assets/logofinal.png" alt="Logo" class="h-16 w-16 ml-10"> 
+    <div class="ml-0 text-4xl font-bold text-black font-serif">Reverie</div>
+  </div>
+  <nav class="space-x-4">
+    <ul class="flex items-center">
+      <li class="inline"><a class="ml-0 hover:bg-[#064e3b]" routerLink="/writers">Writers</a></li>
+      <li class="inline"><a class="ml-4 hover:bg-[#064e3b]" routerLink="/login">Sign In</a></li>
+      <button class="bg-black rounded-full inline-flex items-center h-12 w-32 ml-4">
+        <li class="inline"><a class="ml-5 text-white hover:bg-black" routerLink="/signup">Get Started</a></li>
+      </button>
+    
+    </ul>
+  </nav>
+</header>
+
+<div class="border-b border-black"></div>
+
+<div class="flex h-900">
+  <div class="w-1/2 bg-[#064e3b] p-4">
+    <div class="mt-40">
+    <p class="text-7xl ml-10 font-bold font-[gt-super]">Live and Write.</p>
+    </div>
+    <button class="bg-black rounded-full inline-flex items-center h-12 w-32 ml-10 mt-10">
+      <li class="inline"><a class="ml-5 text-white hover:bg-slate-900" routerLink="/signin">Start Reading</a></li>
+    </button>
+  </div>
+  <div class="w-1/2">
+    <img src="../../../assets/wordcloud.jpg" alt="Image" class="w-full h-auto">
+  </div>
+</div>
+<div class="border-b border-black"></div>
+
+<div class="flex flex-col items-start h-900 ml-16 mt-6">
+  <div class="flex mt-2">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+    </svg>
+    <p class="text-2xl font-bold ml-4 font-serif">Topics</p>
+  </div>
+  <div class="flex flex-wrap mt-4">
+    <button class="bg-slate-300 hover:bg-slate-400 rounded-full inline-flex items-center h-12 w-32 ml-4">
+      <p class="text-black font-semibold text-center ml-4">Programming</p>
+    </button>
+    <button class="bg-slate-300 hover:bg-slate-400 rounded-full inline-flex items-center h-12 w-32 ml-4">
+      <p class="text-black font-semibold text-center ml-4">Data Science</p>
+    </button>
+    <button class="bg-slate-300 hover:bg-slate-400 rounded-full inline-flex items-center h-12 w-32 ml-4">
+      <p class="text-black font-semibold text-center ml-10">Travel</p>
+    </button>
+    <button class="bg-slate-300 hover:bg-slate-400 rounded-full inline-flex items-center h-12 w-32 ml-4">
+      <p class="text-black font-semibold text-center ml-8">Lifestyle</p>
+    </button>
+  </div>
+</div>
+<br>
+<br>
+<div class="border-b border-black"></div>
+
+<div class="flex flex-col items-start h-900 ml-16 mt-6">
+  <div class="flex mt-2">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+      />
+    </svg>
+    <p class="text-2xl font-bold ml-4 font-serif">Topics</p>
+  </div>
+  <div class="flex flex-wrap mt-4">
+    <button
+      class="bg-slate-300 hover:bg-slate-400 rounded-full inline-flex items-center h-12 w-32 ml-4"
+    >
+      <p class="text-black font-semibold text-center ml-4">Programming</p>
+    </button>
+    <button
+      class="bg-slate-300 hover:bg-slate-400 rounded-full inline-flex items-center h-12 w-32 ml-4"
+    >
+      <p class="text-black font-semibold text-center ml-4">Data Science</p>
+    </button>
+    <button
+      class="bg-slate-300 hover:bg-slate-400 rounded-full inline-flex items-center h-12 w-32 ml-4"
+    >
+      <p class="text-black font-semibold text-center ml-10">Travel</p>
+    </button>
+    <button
+      class="bg-slate-300 hover:bg-slate-400 rounded-full inline-flex items-center h-12 w-32 ml-4"
+    >
+      <p class="text-black font-semibold text-center ml-8">Lifestyle</p>
+    </button>
+  </div>
+</div>
+<br />
+<br />
+<div class="border-b border-black">{{allBlogs}}</div>
+
+<footer class="bg-[#064e3b] py-4">
+  <div class="container mx-auto">
+    <div class="flex justify-end">
+      <div class="mr-4 text-black">
+        <p>Contact Us</p>
+        <a href="mailto:khushipshah.2002@gmail.com" class="font-bold">khushipshah.2002@gmail.com</a><br>
+        <a href="mailto:amandesai.edu@gmail.com" class="font-bold">amandesai.edu@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+

@@ -1,0 +1,70 @@
+<section>
+  <link href="./writers.component.css" rel="stylesheet" />
+
+  <header
+    class="bg-[#064e3b] sticky top-0 text-white flex items-center justify-between px-4 py-2">
+    <div class="flex items-center">
+      <img
+        src="../../../assets/logofinal.png"
+        alt="Logo"
+        class="h-16 w-16 ml-10"
+      />
+      <div class="ml-0 text-base text-black font-serif">Draft</div>
+      <p class="ml-4 text-base text-black font-serif">{{ savingStatus }}</p>
+    </div>
+    <nav class="space-x-4">
+      <ul class="flex items-center">
+        <button
+          class="bg-green-500 rounded-full inline-flex items-center h-12 w-24 ml-4 hover:bg-green-600"
+        >
+          <li class="inline">
+            <a class="ml-5 text-white" routerLink="/publish">Publish</a>
+          </li>
+        </button>
+
+        <button
+          class="ml-4 w-12 h-12 rounded-full flex items-center justify-center bg-blue-500 text-white text-xl"
+        >
+          {{ name.charAt(0) }}
+        </button>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="border-b border-black"></div>
+
+  <form [formGroup]="blogForm">
+	<mat-form-field [formControl]="title">
+		<mat-label>Title</mat-label>
+		<input class="text-6xl text-black" type="text" placeholder="Title...">
+	</mat-form-field>
+  </form>
+
+  <!-- 
+<div class="flex flex-col items-start h-900 ml-16 mt-6">
+  <input class="text-6xl text-black" type="text" placeholder="Title..."> -->
+  <!-- [ngModel]="inputValue" (ngModelChange)="updateInputValue($event)"  -->
+  <!-- </div>
+
+<div class="border-b border-black"></div>
+
+<div class="flex flex-col items-start h-screen ml-16 mt-0 bg-transparent border-none">
+  <input class="text-6xl text-black w-full h-full bg-transparent border-none" type="text" placeholder="Start Writing...">
+</div> -->
+</section>
+
+<footer class="bg-[#064e3b] py-4">
+  <div class="container mx-auto">
+    <div class="flex justify-end">
+      <div class="mr-4 text-black">
+        <p>Contact Us</p>
+        <a href="mailto:khushipshah.2002@gmail.com" class="font-bold"
+          >khushipshah.2002@gmail.com</a
+        ><br />
+        <a href="mailto:amandesai.edu@gmail.com" class="font-bold"
+          >amandesai.edu@gmail.com</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
